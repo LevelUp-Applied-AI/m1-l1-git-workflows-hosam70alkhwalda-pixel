@@ -1,0 +1,43 @@
+name: integration-1-dev-environment Autograder
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  autograder:
+    runs-on: ubuntu-latest
+
+    # Tier 1 — no services block needed.
+    # (Tier 3/4 modules requiring Weaviate, PostgreSQL, or Docker Compose
+    #  would uncomment a services: block here.)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Install project dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            echo "requirements.txt not found — autograder will report missing file"
+          fi
+
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run structural checks
+        run: pytest tests/ -v --tb=short

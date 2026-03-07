@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Add more patterns here:
+# - Virtual environment: .venv/
+# - Data files: *.csv, *.parquet, *.xlsx, data/raw/
+# - Secrets: .env
+# - OS artifacts: .DS_Store
