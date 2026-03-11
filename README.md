@@ -39,3 +39,84 @@ python test_environment.py    # should print "Environment OK"
 ---
 
 *Starter file for Lab 1 — lab-1-git-workflows | aispire-14005*
+
+
+
+# Hospital Admission Records Analysis
+
+## Team Members
+
+Hosam Alkhwalda  
+Omar Khalid  
+Sara Ahmad
+
+
+## Project Overview
+
+This project analyzes hospital admission records to identify patterns in
+patient admissions and healthcare usage. The goal is to build a reproducible
+data analysis environment that allows team members to explore hospital data
+and generate insights efficiently.
+
+
+## Data Sources
+
+The project will use hospital admission datasets stored locally.
+
+Data is not tracked in this repository. See the setup instructions below
+for how to obtain and place the data files before running any analysis.
+
+Example data location:
+
+data/raw/admissions.csv
+
+
+## Setup Instructions
+
+Clone the repository:
+
+git clone <repo-url>
+
+Navigate to the project folder:
+
+cd aispire-foundations
+
+Create a virtual environment:
+
+python -m venv .venv
+
+
+Activate the environment:
+
+Mac / Linux
+
+source .venv/bin/activate
+
+Windows Git Bash
+
+source .venv/Scripts/activate
+
+Windows CMD
+
+.venv\Scripts\activate.bat
+
+Windows PowerShell
+
+.venv\Scripts\Activate.ps1
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Verify environment:
+
+python test_environment.py
+
+Expected output:
+
+Environment OK
+
+
+## Project Structure
