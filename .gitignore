@@ -11,3 +11,9 @@ __pycache__/
 # - Data files: *.csv, *.parquet, *.xlsx, data/raw/
 # - Secrets: .env
 # - OS artifacts: .DS_Store
+
+.venv/*
+
+./venvv/*
+
+.venv/*
