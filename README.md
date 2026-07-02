@@ -1,5 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/FdVrU54p)
-# [Project Title — e.g., Hospital Admission Records Analysis]
+#  Hospital Admission Records Analysis
 
 > **Lab 1 starter repo** — Replace the heading above with your project title. Team member names are not part of the lab — they go in Section 2 of your completed README in the integration task.
 
@@ -7,7 +7,12 @@
 
 ## Project Overview
 
-TODO: Write 2–3 sentences describing what this project does and who it is for.
+This lab focuses on setting up a reproducible Python project environment using Git and virtual environments.
+The goal is to ensure that any team member can quickly recreate the development environment and run the project without configuration issues.
+
+The setup includes creating a requirements.txt file for project dependencies, configuring .gitignore to exclude unnecessary files such as .venv, and verifying that the environment works correctly using test_environment.py.
+
+By completing this setup, the project environment can be created with only a few commands, ensuring consistency across all team members.
 
 ---
 
